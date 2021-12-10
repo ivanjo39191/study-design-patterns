@@ -92,7 +92,10 @@ class Sprite:
 
 class MealAbstractInterface: 
 
-    def __init__(self, main=None, side=None, drink=None):
+    def __init__(self, classname=None):
+        self.process = classname
+
+    def order(self, main=None, side=None, drink=None):
         self.main = main
         self.side = side
         self.drink = drink
@@ -121,6 +124,8 @@ class McDonaldsFactoryAbstractInterface:
     def run(self):
         self.process.run()
 
+    def order(self, **args):
+        self.process.order(**args)
 
 if __name__ == '__main__':
     
@@ -142,7 +147,8 @@ if __name__ == '__main__':
         
     meal_number = input("Please Input Meal Number: ")
     if meal_number.isdigit() and meal_number in test3.meal_dict:
-        test3.process = MealAbstractInterface(**test3.meal_dict[meal_number])
+        test3.process = MealAbstractInterface()
+        test3.order(**test3.meal_dict[meal_number])
         test3.run()
     else :
         print("No Meal Bye Bye!")
