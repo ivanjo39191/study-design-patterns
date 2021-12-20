@@ -1,4 +1,4 @@
-package com.sky.test;
+package com.sky.week1;
 
 public class DrinkFactory {
     public static Drinks produce(String type) {

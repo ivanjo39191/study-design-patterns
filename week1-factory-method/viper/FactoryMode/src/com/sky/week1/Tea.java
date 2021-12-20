@@ -1,4 +1,4 @@
-package com.sky.test;
+package com.sky.week1;
 
 public class Tea implements Drinks {
 
