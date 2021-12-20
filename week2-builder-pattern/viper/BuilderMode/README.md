@@ -1,2 +1,2 @@
 # BuilderMode
-![image](https://github.com/f127831041/FactoryMode/blob/main/model.png)
+![image](https://github.com/ivanjo39191/study-design-patterns/blob/main/week2-builder-pattern/viper/BuilderMode/builder.png)
