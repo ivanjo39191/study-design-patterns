@@ -39,10 +39,12 @@ def main():
     prototype = Prototype()
     cid = 'first ninja'
     prototype.register(cid, ninja1)
-    ninja2 = prototype.clone(cid, skill='大玉螺旋丸')
+    ninja2 = prototype.clone(cid, name='影分身')
     print(ninja1)
+    ninja1.skill = '大玉螺旋丸'
     print(ninja2)
     print(ninja1)
+    print(ninja2)
     
 if __name__ == '__main__':
     main()
